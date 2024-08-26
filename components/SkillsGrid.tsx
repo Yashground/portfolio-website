@@ -1,18 +1,21 @@
 // components/SkillsGrid.tsx
 import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { FaPython, FaDatabase, FaChartBar, FaCode, FaReact, FaJs, FaNodeJs, FaGithub } from 'react-icons/fa';
+import { FaPython, FaChartBar, FaCode, FaReact, FaJs, FaNodeJs, FaGithub, FaDocker } from 'react-icons/fa';
+import { SiAzuredevops } from 'react-icons/si';
+import { FaAws } from 'react-icons/fa6';
 
 const SkillsGrid = () => {
   const skills = useMemo(() => [
     { icon: <FaPython />, name: 'Python' },
-    { icon: <FaDatabase />, name: 'SQL' },
+    { icon: <FaDocker/>, name: 'Docker' },
     { icon: <FaChartBar />, name: 'Power BI' },
     { icon: <FaCode />, name: 'Data Viz' },
     { icon: <FaJs />, name: 'JavaScript' },
-    { icon: <FaReact />, name: 'React' },
+    { icon: <SiAzuredevops />, name: 'DevOps' },
     { icon: <FaNodeJs />, name: 'Node.js' },
     { icon: <FaGithub />, name: 'Git' },
+    { icon: <FaAws/>, name: 'AWS' },
   ], []);
 
   const skillVariants = {

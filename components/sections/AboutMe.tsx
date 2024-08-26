@@ -3,7 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import StyledPic from '../Styledpic';
-import { FaLightbulb, FaCode, FaPizzaSlice, FaHiking, FaPuzzlePiece, FaChalkboardTeacher } from 'react-icons/fa';
+import { FaLightbulb, FaCode, FaPizzaSlice, FaHiking, FaGlobeEurope } from 'react-icons/fa';
 import { useScrollSection } from '@/hooks/use-scroll-section';
 import { CardSpotlight } from '../ui/card-spotlight';
 
@@ -26,11 +26,11 @@ const AboutMe: React.FC = () => {
           </CardHeader>
           <CardContent className="text-sm sm:text-base text-foreground space-y-4">
             <p>
-              👋 Hello there! I&apos;m Krishnakumar, a Data Analyst with a knack for decoding complicated data and spinning it into a meaningful narrative. My fascination for math was nurtured from childhood, all thanks to my math-genius mother.
+              👋 Hello there! I&apos;m Yash, Passionate tech enthusiast, always exploring new innovations in AI and DevOps while enjoying life&apos;s travel adventures with my amazing wife!.
             </p>
             <p>
               <FaCode className="inline-block mr-2" /> 
-              Post my two-year stint as a data analyst, I decided to plunge into the world of academia to pursue my master&apos;s. Here, I found myself teaching Transform Calculus, which was quite an eye-opener. I realized that programming and math weren&apos;t just two separate entities, they were two sides of the same coin. This understanding ignited my interest in data analysis and machine learning.
+              Post my Contract with Microsoft, I decided to move from India to Germany. Here, I found myself immersed into several side projects involving AI and design, which was quite an eye-opener. I realized that programming and math weren&apos;t just two separate entities, they were two sides of the same coin. This understanding ignited my interest in AI integrating it with the DevOps principles I have learnt.
             </p>
             <p>
               When I&apos;m not crunching numbers or coding, you might find me:
@@ -38,10 +38,10 @@ const AboutMe: React.FC = () => {
             <ul className="list-disc pl-5 space-y-2">
               <li><FaPizzaSlice className="inline-block mr-2" /> On a never-ending quest for the perfect pizza recipe</li>
               <li><FaHiking className="inline-block mr-2" /> Exploring new hiking trails (and probably getting lost)</li>
-              <li><FaPuzzlePiece className="inline-block mr-2" /> Solving puzzles that make my brain do backflips</li>
+              <li><FaGlobeEurope className="inline-block mr-2" /> or Just in a different European country </li>
             </ul>
             <p>
-              At present, I&apos;m eagerly diving into the deep end of machine learning and dabbling in web development as a bit of a side hobby. The intersection of data science and technology holds endless possibilities, and I can&apos;t wait to explore them all. I&apos;m a firm believer in lifelong learning and self-improvement, so I seize every opportunity to learn, regardless of the circumstances. And honestly, making life a tad simpler with these skills - now, isn&apos;t that a fun thought?
+              At present, I&apos;m eagerly diving into the deep end of Artificial Intelligence, LLM;s, Sharing content within these fields to educate fellow peers. The intersection of DevOps and AI holds endless possibilities of Robust intelligent applications, and I can&apos;t wait to explore them all. I&apos;m a firm believer in lifelong learning and self-improvement, so I seize every opportunity to learn, regardless of the circumstances. And honestly, making life a tad simpler with these skills - now, isn&apos;t that a fun thought?
             </p>
           </CardContent>
         </Card>

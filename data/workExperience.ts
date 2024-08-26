@@ -1,8 +1,13 @@
 // data/workExperience.ts
-import { FaBriefcase, FaPython, FaDatabase, FaChartBar, FaAws, FaReact, FaChalkboardTeacher, } from 'react-icons/fa';
-import { SiPowerbi } from 'react-icons/si';
+import { FaBriefcase, FaPython, FaDatabase, FaChartBar, FaAws, FaReact, FaChalkboardTeacher, FaHandScissors, FaDeploydog, } from 'react-icons/fa';
+import { SiApachehadoop, SiAzuredevops, SiDocker, SiOpenai, SiPowerbi, SiTicketmaster } from 'react-icons/si';
 import { PiMathOperationsFill } from "react-icons/pi";
 import React from 'react';
+import { BiSupport } from 'react-icons/bi';
+import { MdEmail } from 'react-icons/md';
+import { VscAzureDevops } from 'react-icons/vsc';
+import { ScissorsIcon } from '@radix-ui/react-icons';
+import { FaAppStore, FaLinux, FaWatchmanMonitoring } from 'react-icons/fa6';
 
 export interface Skill {
   name: string;
@@ -21,58 +26,76 @@ export interface WorkExperience {
 
 export const workExperiences: WorkExperience[] = [
 {
-    company: "Concordia University",
-    position: "TA - Transform Calculus and PDE",
-    duration: "Sep 2023 - Dec 2023",
-    year: 2023,
+    company: "Ascendion",
+    position: "Lead Engineer",
+    duration: "July 2021 - March 2024",
+    year: 2021,
     description: [
-      "Crafted Python simulations to visualize (Fourier Series, Laplace Transforms, PDEs) solutions, enhancing student understanding of the link between theory and real-world applications.",
-      "Facilitated collaborative learning by leading group discussions and encouraging peer support, building a positive and productive learning environment.",
-      "Received excellent student feedback, contributing to a 20% increase in satisfaction ratings compared to previous terms."
+      ""
     ],
     skills: [
-      { name: "Python", icon: FaPython },
-      { name: "Teaching", icon: FaChalkboardTeacher },
-      { name: "Mathematics", icon: PiMathOperationsFill },
+      { name: "ServiceNow Incident Management", icon: SiTicketmaster },
+      { name: "Azure", icon: SiAzuredevops },
+      { name: "Docker", icon: SiDocker },
+      { name: "Open AI and Power Platform", icon: SiOpenai }
     ],
     logo: "/logos/concordia-university.png" // Add the path to the Concordia University logo
   },
   {
-    company: "IA Flow Elements",
-    position: "Associate Data Analyst",
-    duration: "April 2020 – July 2022",
+    company: "RareRoots Organic",
+    position: "Co-Founder",
+    duration: "March 2020 - June 2021 ",
     year: 2020,
     description: [
-      "Engineered a predictive model using machine learning algorithms to forecast sales trends, enhancing decision-making accuracy and contributing to a 15% uplift in sales projections accuracy.",
-      "Boosted data processing efficiency by 40% via custom Python scripts for ETL automation, ensuring precise data handling from extraction to in-depth analysis, integrating with AWS cloud.",
-      "Led the team to optimize data processing workflows by 30% by migrating to AWS, enhancing both data handling efficiency and system scalability while also ensuring data accuracy.",
-      "Developed a Python-based application with a Tkinter GUI for the marketing team to add and track quotes, integrating with Power BI to visually monitor progress and improve quote management efficiency.",
-      "Established efficiency metrics and automated Excel dashboards using VBA scripting, which boosted the productivity and efficiency of designers and CAD technicians by over 25%.",
-      "Enhanced business process efficiency and decision support by collaborating with teams to optimize data workflows and designing tailored Power BI dashboards and KPI reports, resulting in improved strategic planning across the organization."
+      "Setup business operations page to accept Orders and integrated RazorPay payment gateway to accept online orders ",
+      "Enhanced business process efficiency and decision support by collecting feedback from end users to optimize logistics and delivery of business"
     ],
     skills: [
       { name: "Python", icon: FaPython },
       { name: "SQL", icon: FaDatabase },
       { name: "Power BI", icon: SiPowerbi },
-      { name: "AWS", icon: FaAws },
-      { name: "Data Visualization", icon: FaChartBar },
+      { name: "API Integration", icon: FaAppStore },
     ],
     logo: "/logos/ia-flow.png"
   },
   {
-    company: "IA Flow Elements",
-    position: "CAD Designer",
-    duration: "June 2019 – March 2020",
-    year: 2019,
+    company: "GreyNubo",
+    position: "Systems Engineer",
+    duration: "October 2017 – March 2020",
+    year: 2017,
     description: [
-      "Designed flow elements according to provided specifications using RW Miller software, improving product performance in the oil & gas sector.",
-      "Managed technical quotations, effectively converting quotes to orders, demonstrating strong business communication skills.",
-      "Handled client-centric reporting and documentation, ensuring tailored solutions and high customer satisfaction."
+      "Troubleshooting AWS S3 bucket transfers via integrated Web Methods and ensure the transfer of various documents like Purchase Orders, Change Orders, Invoices from the application.",
+      "Build and Deployment of AWS infrastructure and applications using Spinnaker.",
+      "Implemented and managed monitoring solutions using Grafana and Prometheus to track system performance, uptime and downtime of Applications running.",
+      "Working on Akamai and Cloud Front for content delivery." ,
+      "SSL Certificate management for sites." ,
+      "Deploying ELK solution for logging and visualization."
     ],
     skills: [
-      { name: "CAD", icon: FaReact },
-      { name: "Technical Documentation", icon: FaChartBar },
+      { name: "AWS", icon: FaAws },
+      { name: "Deployments", icon: FaDeploydog },
       { name: "Client Communication", icon: FaBriefcase },
+      { name: "Prometheus and Grafana", icon: FaWatchmanMonitoring},
+    ],
+    logo: "/logos/ia-flow.png"
+  },
+  {
+    company: "Edureka",
+    position: "Technical Consultant",
+    duration: "June 2014 – October 2017",
+    year: 2014,
+    description: [
+      "Managed and automated the creation and maintenance of AWS Ec2 Vm’s programmatically with CloudFormation templates.",
+      "Set up Bigdata hadoop cluster with auto-scaling nodes and high availability. ",
+      "AWS Auto Scaling and Load Balancers. ",
+      "Implemented robust backup storage solutions and AWS Glacier for archival storage and retrieval.",
+      "Configured notification services using AWS SNS to manage system alerts and used Cloud Watch Monitoring and AWS billing which Optimized the monetary resources spent on Instances by at least 30%."
+    ],
+    skills: [
+      { name: "AWS", icon: FaAws },
+      { name: "BigData and Hadoop", icon: SiApachehadoop },
+      { name: "Client Communication", icon: FaBriefcase },
+      { name: "Linux", icon: FaLinux},
     ],
     logo: "/logos/ia-flow.png"
   }

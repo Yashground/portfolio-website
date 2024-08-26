@@ -10,8 +10,8 @@ import Footer from "@/components/sections/Footer";
 import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
-  title: "Krishnakumar",
-  description: "Personal portfolio of Krishnakumar",
+  title: "Srisaila Yeshwanth Pappu",
+  description: "Personal portfolio of Yash",
 };
 
 const navItems = [
@@ -51,15 +51,15 @@ export default function RootLayout({
           sizes="32x32"
           href="./favicon-32x32.png"
         />
-        <meta property="og:title" content="Krishnakumar's Portfolio" />
+        <meta property="og:title" content="Srisaila Yeshwanth's Portfolio" />
         <meta
   property="og:description"
-  content="Data analyst with a passion for web development and machine learning. Transforming complex data into actionable insights and building innovative web solutions."
+  content="DevOps Engineer with a passion for web development and AI. Transforming complex data into actionable insights and building innovative web solutions."
 />
-        <meta property="og:url" content="https://krishnakumar.dev" />
+        <meta property="og:url" content="https:" />
         <meta
           property="og:image"
-          content="https://krishnakumar.dev/pics/web_screenshot.png"
+          content="https:"
         />
         <meta property="og:type" content="website" />
       </head>
